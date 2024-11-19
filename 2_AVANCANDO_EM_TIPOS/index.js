@@ -20,3 +20,19 @@ const arr1 = [1, "eduardo", true, { nome: "eduardo lira" }, []];
 console.log(arr1);
 arr1.push([1, 2, 3]);
 console.log(arr1);
+//4 - Parâmetros tipados
+function soma(a, b) {
+    console.log(a + b);
+}
+soma(4, 6);
+// 5 - retorno de função
+function greeting(name) {
+    return `Olá ${name}`;
+}
+console.log(greeting("Eduardo"));
+// 6 - função anônima
+setTimeout(function () {
+    const sallary = 1000;
+    // console.log(parseFloat(sallary))
+    // console.log(sallary)
+}, 2000);
