@@ -36,3 +36,29 @@ setTimeout(function () {
     // console.log(parseFloat(sallary))
     // console.log(sallary)
 }, 2000);
+// 7 - Tipos de objetos
+function passCoordinates(coord) {
+    console.log("X coordinates: " + coord.x);
+    console.log("Y coordinates: " + coord.y);
+}
+const objCoord = { x: 239, y: 34.2 };
+passCoordinates(objCoord);
+const pessoaObj = { nome: "Eduardo", surname: "Cunha" };
+// 8 - Props opcionais
+function showNumbers(a, b, c) {
+    console.log("A: " + a);
+    console.log("B: " + b);
+    console.log("C: " + c);
+}
+showNumbers(1, 2, 3);
+showNumbers(1, 2);
+// showNumbers(1)
+// 9 - Validando argumento opcional 
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+console.log(advancedGreeting("Eduardo", "Neto"));
+console.log(advancedGreeting("Kamylle"));
