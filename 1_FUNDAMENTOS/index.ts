@@ -31,3 +31,5 @@ let ann: string = "teste"
 // Inference = o próprio TS identifica qual o tipo daquela variável. Mostra um erro caso tente inserir um valor que nao seja do tipo do dado.
 let inf = "Teste"
 
+console.log("testando 3")
+
