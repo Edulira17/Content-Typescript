@@ -75,3 +75,35 @@ function advancedGreeting(firstName: string, lastName?: string){
 
 console.log(advancedGreeting("Eduardo", "Neto"))
 console.log(advancedGreeting("Kamylle"))
+
+// 10 - Union Types
+function showBalance(balance: number | string) {
+  console.log(`O saldo da conta é R$${balance}`)
+}
+showBalance(100)
+showBalance("500")
+// showBalance(true)
+
+const arr2: Array<number | string | boolean> = [1, true, "3"]
+
+
+// 11 - Avançando em Union Types
+function showUserRole(role: boolean | string) {
+  if(typeof role === "boolean"){
+    return "Usuário não aprovado!"
+  }
+
+  return`A função do usuário é: ${role}`
+}
+console.log(showUserRole(false))
+console.log(showUserRole("ADMIN"))
+
+// 12 - Type alias
+type ID = string | number
+
+function showId(id: ID) {
+  console.log(`O ID é: ${id}`)
+}
+
+showId(1)
+showId("4999")
