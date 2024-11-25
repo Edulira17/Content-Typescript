@@ -107,3 +107,56 @@ function showId(id: ID) {
 
 showId(1)
 showId("4999")
+
+// 12 - Interface
+interface Point {
+  x: number
+  y: number
+  z: number
+}
+
+function showCoords(obj: Point){
+  console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`)
+}
+
+const coordObj: Point = {
+  x: 10,
+  y: 20,
+  z: 15
+}
+
+showCoords(coordObj)
+
+// 13 - interface x type alias
+interface Person {
+  name: string
+}
+
+interface Person {
+  age: number
+}
+
+const somePerson: Person = {name: "eduardo", age: 34}
+console.log(somePerson)
+
+type personType = {
+  name: string
+}
+
+// type personType = {
+//   age: number
+// }
+
+// 14 - Literal type
+let test: "testando"
+
+test = "testando"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center") {
+  console.log(`A direção é: ${direction}`)
+}
+
+showDirection("left")
+showDirection("center")

@@ -84,3 +84,26 @@ function showId(id) {
 }
 showId(1);
 showId("4999");
+function showCoords(obj) {
+    console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 20,
+    z: 15
+};
+showCoords(coordObj);
+const somePerson = { name: "eduardo", age: 34 };
+console.log(somePerson);
+// type personType = {
+//   age: number
+// }
+// 14 - Literal type
+let test;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+showDirection("left");
+showDirection("center");
