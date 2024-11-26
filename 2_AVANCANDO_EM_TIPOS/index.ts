@@ -160,3 +160,27 @@ function showDirection(direction: "left" | "right" | "center") {
 
 showDirection("left")
 showDirection("center")
+
+// DISPONIVEIS SOMENTE NA VERSAO ES2020
+// 15 - Non-null Assertion Operator
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
+
+// 16 - Bigint
+let n: bigint
+
+// n = 1
+
+n = 1000n
+
+console.log(n)
+console.log(typeof n)
+console.log(n + 100n)
+
+// 17 - Symbol
+let symbolA: symbol = Symbol("a")
+let symbolB: symbol = Symbol("a")
+
+console.log(symbolA == symbolB)
+console.log(symbolA === symbolB)
